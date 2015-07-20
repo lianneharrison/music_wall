@@ -1,6 +1,11 @@
+
+<h1>List all your favourite music right here!</h1>
+<p class="lead">Keep all your favourite songs in one place!</p>
+
+
 <% @song.each do |song| %>
   <div class="song">
-    <h3><a href="/songs/<%= song.id %>"><%= song.song_title %></a><small>(by: <%= song.author %>)</small></h3>
+    <h3><a href="/songs/<%= song.id %>"><%= song.song_title %></a><small> (by: <%= song.author %>)</small></h3>
     <p>
       <a href="http://<%= song.url %>"><%= song.url %></a>
   </div>

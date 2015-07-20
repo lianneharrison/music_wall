@@ -1,0 +1,33 @@
+body {
+  padding-top: 50px;
+  background-image: url(http://www.munciesymphony.org/wp-content/uploads/2013/10/musiccolor.jpg);
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover { 
+    color: #5941BF;
+}
+
+.navbar-header {
+
+}
+
+.song a {
+  font-size: 2em;
+}
+
