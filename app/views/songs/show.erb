@@ -1,12 +1,16 @@
-<h1><%= @song.song_title %></h1>
+<div class="track_info">
 
-<p>
-  Author: <%= @song.author %>
-</p>
+  <h1><%= @song.song_title %></h1>
 
-<p>
-  <a href="http://<%= @song.url %>"><%= @song.url %></a>
-</p>
+  <p>
+    Author: <%= @song.author %>
+  </p>
 
-<hr/>
-<a href="/songs">Back to All Songs</a>
+  <p>
+    <a href="http://<%= @song.url %>"><%= @song.url %></a>
+  </p>
+
+  <hr/>
+  <a href="/songs">Back to All Songs</a>
+
+</div>

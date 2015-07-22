@@ -1,11 +1,23 @@
+<div class="song_list">
 
 <% @song.each do |song| %>
   <div class="song">
-    <h3><a href="/songs/<%= song.id %>"><%= song.song_title %></a><small> (by: <%= song.author %>)</small></h3>
+    <h3><strong><a href="/songs/<%= song.id %>"><strong><%= song.song_title %></a>
+    <br>
+    <small>(by: <%= song.author %>)</small></h3>
     <p>
-      <a href="http://<%= song.url %>"><%= song.url %></a>
+      <%= song.url %></a>
+      <br>
+      ----------------------------------------------------------------------------
+    </p>
+    <p>
+      Posted by: <%= song.user.username %>
+    </p>
   </div>
 <% end %>
 
-<a href="/songs/new">Add a song! It's FREE!</a>
+<div class="add_new">
+  <a href="/songs/new">Add a song! It's FREE!</a>
+</div>
 
+</div>

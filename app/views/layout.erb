@@ -6,11 +6,10 @@
     differences in how form elements appear between Firefox and IE
     See: http://necolas.github.com/normalize.css/
   -->
-<!--   <link rel="stylesheet" href="/stylesheets/normalize.css"> -->
+
   <link rel="stylesheet" href="/stylesheets/bootstrap_css/bootstrap.css">
-  <link rel="stylesheet" href="/stylesheets/bootstrap_css/bootstrap-theme.css">
-  <link rel="stylesheet" href="/stylesheets/application.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900' rel='stylesheet' type='text/css'>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/javascript/application.js"></script>
@@ -32,29 +31,29 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active">Home</a></li>
-            <li>Sign In</a></li>
-            <li>Sign Up</a></li>
+            <% if session['user_id'] %>
+              <li><a>Welcome back, <%= session['username'] %></a></li>
+              <li><a href="/users/logout">Logout</a></li>
+            <% else %>
+              <li><a href="/users/login">Login</a></li>
+              <li><a href="/users/signup">Sign Up</a></li>
+            <% end %>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-
-    <div class="container">
 
       <div class="starter-template">
 
         <%= yield %>
 
       </div>
-    </div>
 
-    <div class="container">
-      <hr>
+<!--     <div class="clearfix"> -->
       <footer>
-        <p>© Awesome Music Inc 2014</p>
+        <p>© Awesome Music Inc 2015</p>
       </footer>
-    </div> <!-- /container --> 
+    <!-- </div> --> <!-- /container --> 
 
         <!-- Bootstrap core JavaScript
     ================================================== -->

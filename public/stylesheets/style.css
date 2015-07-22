@@ -1,33 +1,64 @@
+/** {
+  border: 1px solid red !important;
+}*/
+
 body {
-  padding-top: 50px;
-  background-image: url(http://cdn.playbuzz.com/cdn/37c6903f-acab-4401-807f-d39d1e143cf4/3089ee30-887f-4a7d-9422-e30b2d7ace87.jpg);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  background-color: #96a0a9;
+}
+
+.starter-template {
+  text-align: center;
+}
+
+.homepage {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin: 0;
+  background-image: url(http://www.cityofsydney.nsw.gov.au/__data/assets/image/0009/157527/Live-music-taskforce.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
+.homepage h1 {
+  font-size: 4em;
+  color: #c1fe00;
+}
+
+.homepage h2 {
+  font-weight: 300;
+  font-size: 2em;
+  margin-bottom: 5%;
+  color: #2d375a;
+}
+
+.homepage a {
+  font-size: 1.5em;
+  background-color: #08ab68;
+  color: #333333;
+  padding: 1%;
+  border-radius: 25px;
+}
+
+.homepage p {
+  font-size: 1.5em;
+  margin-top: 5%;
+  color: #ffffff;
+  margin-bottom: 1.5%;
+}
+
+a.signin {
+  background-color: #96a0a9;
+  color: #333333;
 }
 
 h1 {
-  color: #ffffff;
-}
-
-h2 {
-  color: #ffffff;
-}
-
-p {
-  color: #ffffff;
-}
-
-a {
-  color: #ffffff;
+  font-weight: 900;
 }
 
 a:hover { 
-    color: #5941BF;
+    color: #29253c;
 }
 
 label {
@@ -38,7 +69,80 @@ label {
   color: #ffffff;
 }
 
-.song a {
-  font-size: 1em;
+.login {
+  margin-top: 5%;
 }
 
+.login h1 {
+  font-size: 4em;
+  color: #c1fe00;  
+}
+
+.login p {
+  font-size: 1.5em;
+  color: #2d375a
+}
+
+.signup {
+  margin-top: 5%;
+}
+
+.signup h1 {
+  font-size: 4em;
+  color: #c1fe00;
+}
+
+.signup h2 {
+  font-size: 2em;
+  color: #1d7a7f;
+}
+
+.signup p {
+  font-size: 1.5em;
+  color: #2d375a
+}
+
+.song_list h3 a {
+  color: #333333;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.song_list h3 small {
+  color: #1d7a7f;
+}
+
+.song_list a {
+  font-size: 1.5em;
+  color: #2d375a;
+}
+
+.song_list {
+  margin-top: 5%;
+}
+
+
+.add_new a {
+  color: #c1fe00;
+  font-size: 2.5em;
+}
+
+.add_new_song {
+  margin-top: 10%;
+}
+
+.add_new_song h2 {
+  color: #c1fe00;
+  font-size: 2.5em;
+  margin-bottom: 3%;
+}
+
+.track_info {
+  margin-top: 5%;
+}
+
+footer {
+  padding-top: 1%;
+  padding-left: 0.5%;
+  padding-bottom: 1%;
+}
